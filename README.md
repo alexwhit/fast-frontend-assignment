@@ -1,12 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## How to Run App
 
-In the project directory, you can run:
+After cloning the repo onto your machine, navigate to the repo and run `npm install` to install any necessary packages.
 
-### `npm start`
+Then you can run `npm start` which will start the application.
 
-Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
@@ -36,6 +35,7 @@ What did you not have time to add? What work took the up majority of your time?<
 How could the application be improved?<br />
 
 - There are some accessibility improvements to make, like providing instructions on how to navigate the search results when something is typed into the search bar and the autosuggest options appear. Similarly, more labels and aria-labels would help describe the app better when using a screen reader.
-- Redux would have been useful for keeping track of the selected movies, but it felt like overkill for a small application like this, so I kept track of the selected movies by using `useState` at the App.tsx level and passing the results into the two page components.
+- Redux would have been useful for keeping track of the selected movies, but it felt like overkill for a small application like this, so I kept track of the selected movies by using `useState` at the `App.tsx` level and passing the results into the two page components.
 - The application could look a little better and more intuitive on desktop - it currently looks like a mobile site that was expanded to also work on larger screens. It's functional, but not the prettiest. For example, I probably wouldn't rely on a sticker footer on larger screens.
 - When a user unselects a movie on the checkout page, the movie could still show up there instead of disappearing. Then the user wouldn't have to go back to the search page to search for it and select it again.
+- A lot of the copy could be improved to be clearer.
