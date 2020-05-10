@@ -1,0 +1,19 @@
+footer {
+  align-items: center;
+  background-color: #2d769d;
+  border-top: 2px white solid;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer button {
+  font-size: 18px;
+  padding: 16px 32px;
+  border-radius: 28px;
+}
+
+footer button:focus {
+  padding: 14px 30px;
+}

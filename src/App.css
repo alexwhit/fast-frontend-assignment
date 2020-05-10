@@ -1,38 +1,103 @@
 .App {
+  background-color: #183c4f;
+  color: white;
+  min-height: 100vh;
+}
+
+.contentContainer {
+  width: 60%;
+  margin: auto;
+  padding: 24px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  .contentContainer {
+    width: 80%;
+  }
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d769d;
+  padding: 0 100px;
+  border-bottom: 2px white solid;
+}
+
+@media screen and (max-width: 800px) {
+  .navBar {
+    padding: 0 20px;
+  }
+}
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background: #2d769d;
   color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: 2px white solid;
+  border-radius: 20px;
+  margin: 18px 0;
+  padding: 10px;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+button:focus {
+  border: 4px white solid;
+  padding: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:disabled {
+  background: #b6b6b6;
+}
+
+.movieGrid {
+  display: grid;
+  gap: 8px;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 800px) {
+  .movieGrid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 650px) {
+  .movieGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.moviePoster {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+  .moviePoster {
+    padding: 4px;
+  }
+}
+
+.moviePoster:focus {
+  border: 2px solid white;
+}
+
+.moviePosterSelected {
+  background-color: #aee2ff;
 }
