@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## How to Run App
 
-After cloning the repo onto your machine, navigate to the repo and run `npm install` to install any necessary packages.
+After cloning the repo onto your machine, navigate to the repo and run `npm install` to install any necessary packages
 
 Then you can run `npm start` which will start the application.
 
